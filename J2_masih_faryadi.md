@@ -43,3 +43,29 @@ The program will compile, however it will not give us the answer we are looking 
 # Question 11.
 In Option 1, since sum x_y is private it woudlnt work. Option 2 would work. In Option 3 sum x_y is private. 
 
+# Question 12. 
+The point of a protected modifier is to act as a middle ground between public and private, and it's purpose is used so any class in it's inheritance is able to use it's data. The protected modifier is used 
+because it's more convient than private, while still being more secure than a public.
+
+# Question 13.
+```java
+public class FormulaOne extends Racecar {
+    private String make;
+
+    public FormulaOne(int n, Driver d, String make){
+        super(n,d);
+        this.make = make;
+    }
+
+    public String toString(){
+        return super.toString() + " " + make;
+    }
+    
+}
+```
+
+# Question 14.
+The code at mark a or b will not work, because addsponsor is protected and both are outside the inheritance chain.
+
+# Question 15.
+![image](/Users/masih22/Desktop/software/masih22-j2/uml_masih.jpg)
